@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meech's Story</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffe6f0, #fff5fa);
+            color:#333;
+            line-height:1.6;
+        }
+
+        /* HEADER */
+
+        header{
+            background:#ffb6c1;
+            padding:40px 20px;
+            text-align:center;
+            color:white;
+            box-shadow:0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1{
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        header p{
+            font-size:1.1rem;
+        }
+
+        /* CONTENT */
+
+        .content{
+            max-width:1100px;
+            margin:auto;
+            padding:40px 20px;
+        }
+
+        /* NAVIGATION */
+
+        nav{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:white;
+            background:#ff69b4;
+            padding:10px 18px;
+            border-radius:25px;
+            margin:5px;
+            display:inline-block;
+            font-weight:bold;
+
+            transition: background 0.3s ease,
+                        transform 0.3s ease;
+        }
+
+        nav a:hover{
+            background:#ff1493;
+            transform:scale(1.05);
+        }
+
+        /* STORY */
+
+        .story-box{
+            background:white;
+            padding:30px;
+            border-radius:20px;
+            box-shadow:0 4px 15px rgba(0,0,0,0.12);
+            margin-bottom:40px;
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .story-box:hover{
+            transform:translateY(-5px);
+            box-shadow:0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .story-box p{
+            margin-bottom:20px;
+            font-size:1.05rem;
+        }
+
+        /* GALLERY */
+
+        .gallery-title{
+            text-align:center;
+            margin-bottom:20px;
+            font-size:2rem;
+            color:#ff69b4;
+        }
+
+        .cats{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap:25px;
+        }
+
+        .cat-card{
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 4px 15px rgba(0,0,0,0.15);
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .cat-card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .cat-card img{
+            width:100%;
+            height:320px;
+            object-fit:cover;
+
+            transition: transform 0.4s ease;
+        }
+
+        .cat-card:hover img{
+            transform:scale(1.05);
+        }
+
+        /* QUOTE */
+
+        .quote{
+            margin-top:50px;
+            background:white;
+            padding:25px;
+            border-radius:20px;
+            text-align:center;
+            box-shadow:0 4px 12px rgba(0,0,0,0.1);
+            font-style:italic;
+            color:#666;
+        }
+
+        /* FOOTER */
+
+        footer{
+            margin-top:60px;
+            background:#ffb6c1;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width:768px){
+
+            header h1{
+                font-size:2.2rem;
+            }
+
+            .story-box p{
+                font-size:1rem;
+            }
+
+            .cat-card img{
+                height:250px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Meech's Story</h1>
+        <p>A rescue that became impossible to forget</p>
+    </header>
+
+    <div class="content">
+
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="ace.html">Ace</a>
+            <a href="spooky.html">Spooky</a>
+        </nav>
+
+        <!-- Story -->
+        <div class="story-box">
+
+            <p>
+                A couple months after Spooky’s first birthday, I received a message from a friend
+                I had not spoken to since graduating high school. She explained that a woman had
+                discovered a box of abandoned kittens left outside near her house and was desperately
+                trying to find help for them.
+            </p>
+
+            <p>
+                My friend asked if there was any way I could foster one of the kittens or help rehome
+                them while they searched for a permanent family. Without hesitation, I immediately agreed.
+                I could not imagine leaving such a tiny kitten without care or support.
+            </p>
+
+            <p>
+                When I first saw her, she was incredibly small and adorable, and we temporarily named
+                her Meech. Even though we knew she would eventually go to another home, we treated her
+                like part of the family from the very beginning. During those two weeks, we made sure
+                she felt safe, loved, and cared for while she adjusted to being indoors and around people.
+            </p>
+
+            <p>
+                Eventually, we were able to find Meech a loving home where she could continue growing
+                up safely. Although she was only with us for a short amount of time, rescuing and fostering
+                her reminded me that even temporary acts of kindness can completely change an animal’s life.
+            </p>
+
+        </div>
+
+        <!-- Gallery -->
+        <h2 class="gallery-title">Meech's Rescue Journey</h2>
+
+        <div class="cats">
+
+            <div class="cat-card">
+                <img src="meech1.jpg" alt="Meech as a kitten">
+            </div>
+
+            <div class="cat-card">
+                <img src="meech2.jpg" alt="Meech being cared for">
+            </div>
+
+            <div class="cat-card">
+                <img src="meech3.jpg" alt="Meech before finding a home">
+            </div>
+
+        </div>
+
+        <!-- Quote -->
+        <div class="quote">
+            <p>
+                “Even the shortest time spent helping an animal can leave a lifelong impact.”
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Made with love for Meech ♡</p>
+    </footer>
+
+</body>
+</html>

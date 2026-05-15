@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace's Story</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffe6f0, #fff5fa);
+            color:#333;
+            line-height:1.6;
+        }
+
+        /* HEADER */
+
+        header{
+            background:#ffb6c1;
+            padding:40px 20px;
+            text-align:center;
+            color:white;
+            box-shadow:0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1{
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        header p{
+            font-size:1.1rem;
+        }
+
+        /* CONTENT */
+
+        .content{
+            max-width:1100px;
+            margin:auto;
+            padding:40px 20px;
+        }
+
+        /* NAVIGATION */
+
+        nav{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:white;
+            background:#ff69b4;
+            padding:10px 18px;
+            border-radius:25px;
+            margin:5px;
+            display:inline-block;
+            font-weight:bold;
+
+            transition: background 0.3s ease,
+                        transform 0.3s ease;
+        }
+
+        nav a:hover{
+            background:#ff1493;
+            transform:scale(1.05);
+        }
+
+        /* STORY SECTION */
+
+        .story-box{
+            background:white;
+            padding:30px;
+            border-radius:20px;
+            box-shadow:0 4px 15px rgba(0,0,0,0.12);
+            margin-bottom:40px;
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .story-box:hover{
+            transform:translateY(-5px);
+            box-shadow:0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .story-box p{
+            font-size:1.05rem;
+            margin-bottom:20px;
+        }
+
+        /* GALLERY */
+
+        .gallery-title{
+            text-align:center;
+            margin-bottom:20px;
+            font-size:2rem;
+            color:#ff69b4;
+        }
+
+        .cats{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap:25px;
+        }
+
+        .cat-card{
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 4px 15px rgba(0,0,0,0.15);
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .cat-card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .cat-card img{
+            width:100%;
+            height:320px;
+            object-fit:cover;
+
+            transition: transform 0.4s ease;
+        }
+
+        .cat-card:hover img{
+            transform:scale(1.05);
+        }
+
+        /* QUOTE SECTION */
+
+        .quote{
+            margin-top:50px;
+            text-align:center;
+            background:#fff;
+            padding:25px;
+            border-radius:20px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.1);
+            font-style:italic;
+            color:#666;
+        }
+
+        /* FOOTER */
+
+        footer{
+            margin-top:60px;
+            background:#ffb6c1;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width:768px){
+
+            header h1{
+                font-size:2.2rem;
+            }
+
+            .story-box p{
+                font-size:1rem;
+            }
+
+            .cat-card img{
+                height:250px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ace's Story</h1>
+        <p>The cat who taught me patience, love, and responsibility</p>
+    </header>
+
+    <div class="content">
+
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="spooky.html">Spooky</a>
+            <a href="meech.html">Meech</a>
+        </nav>
+
+        <!-- Story -->
+        <div class="story-box">
+
+            <p>
+                When I was around 9 or 10 years old, I was incredibly close with my neighbors.
+                During the summer, I would always look out my bedroom window toward their backyard
+                just to see what everyone was doing outside.
+            </p>
+
+            <p>
+                One afternoon in mid-August, I suddenly heard my neighbors yelling my name from outside.
+                They had discovered two tiny newborn kittens hidden underneath their grill and had no idea
+                what to do because they were allergic to cats. The kittens were extremely small and vulnerable,
+                and I immediately felt worried for them.
+            </p>
+
+            <p>
+                I called my mom and begged her to let us help the kittens. Thankfully, she agreed.
+                From that moment on, my older brothers and I took turns bottle-feeding them every two hours,
+                even during the night. It was exhausting at times, but we were determined to keep them healthy
+                and safe until they were old enough to eat on their own.
+            </p>
+
+            <p>
+                We eventually decided to keep one of the kittens and named her Ace. At first, we thought
+                she was a boy, but after realizing she was actually a girl, the name stuck anyway.
+                Over time, Ace became more than just a rescue cat — she became part of my family and one
+                of the biggest reasons my love for rescuing animals continued to grow.
+            </p>
+
+        </div>
+
+        <!-- Gallery -->
+        <h2 class="gallery-title">Ace Through the Years</h2>
+
+        <div class="cats">
+
+            <div class="cat-card">
+                <img src="ace1.jpg" alt="Baby Ace">
+            </div>
+
+            <div class="cat-card">
+                <img src="ace2.jpg" alt="Ace and me">
+            </div>
+
+            <div class="cat-card">
+                <img src="ace3.jpg" alt="Ace today">
+            </div>
+
+        </div>
+
+        <!-- Quote -->
+        <div class="quote">
+            <p>
+                “Saving one animal may not change the world, but for that one animal,
+                their world changes forever.”
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Made with love for Ace ♡</p>
+    </footer>
+
+</body>
+</html>
